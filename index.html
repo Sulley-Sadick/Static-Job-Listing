@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- Project Title -->
+    <title>Frontend Mentor | Job Listings</title>
+
+    <!-- google fonts links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- styles link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <!-- body element -->
+  <body
+    class="[font-family: (var(--font-family))] relative bg-[var(--green-50-background-color)] font-[var(--font-size)]"
+  >
+    <!-- header container -->
+    <header
+      class="h-[10rem] bg-[var(--green-400-color)] bg-[url(./images/bg-header-mobile.svg)] bg-cover bg-center bg-no-repeat p-4 lg:bg-[url(./images/bg-header-desktop.svg)] relative"
+    ></header>
+    </header>
+    <!-- main container -->
+    <main class="main-container p-6">
+      
+      <!-- filtering container -->
+      <div
+        class="filtering-container flex max-h-[8rem] max-w-[23rem] items-center justify-between rounded-[10px] bg-[var(--white-color)] py-5 shadow-2xl sm:max-w-[39rem] mx-auto lg:max-h-[5rem] lg:max-w-[70rem] -mt-[4rem] z-10 relative sm:-mt-[3.5rem]"
+      >
+        <!-- categories -->
+        <div class="categories"></div>
+        <a
+          href="#"
+          class="block pr-6 font-[var(--font-weight-500)] text-[var(--green--900-color)] underline-offset-1 hover:text-[var(--green-400-color)] hover:underline"
+          >Clear</a
+        >
+      </div>
+      <!-- end of filtering container -->
+      <!-- main section -->
+      <section>
+        <div
+          class="new-post-container-box lg:flex lg:items-center lg:justify-between"
+        >
+          <!-- Senior Frontend -->
+          <div class="relative sm:flex sm:items-center sm:gap-4">
+            <img
+              src="./images/photosnap.svg"
+              alt="photosnap"
+              class="post-image-styles"
+            />
+            <div>
+              <div class="padding-top my-4 flex items-center gap-4 sm:my-2">
+                <p class="text-style">Photosnap</p>
+                <p
+                  class="rounded-full bg-[var(--green-400-color)] px-2 py-0.5 font-[var(--font-weight-700)] text-[var(--green-50-background-color)] uppercase"
+                >
+                  New!
+                </p>
+                <p
+                  class="rounded-full bg-[var(--green-900-color)] px-2 py-0.5 font-[var(--font-weight-700)] text-[var(--green-50-background-color)] uppercase"
+                >
+                  Featured
+                </p>
+              </div>
+              <a href="#" class="link-text">Senior Frontend Developer</a>
+              <div class="job-text">
+                <p>1d ago</p>
+                <span class="padding-bottom">.</span>
+                <p>Full Time</p>
+                <span class="padding-bottom">.</span>
+                <p>USA only</p>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <!-- frontend article -->
+          <article class="article-flex">
+            <button type="button" data-role=" Frontend" class="status">
+              Frontend
+            </button>
+            <button type="button" data-level="Senior" class="status">
+              Senior
+            </button>
+            <button type="button" data-language="HTML" class="status">
+              HTML
+            </button>
+            <button type="button" data-language="CSS" class="status">
+              CSS
+            </button>
+            <button type="button" data-language="JavaScript" class="status">
+              JavaScript
+            </button>
+          </article>
+        </div>
+
+        <!-- fullstack  developer-->
+        <div
+          class="new-post-container-box lg:flex lg:items-center lg:justify-between"
+        >
+          <div class="relative sm:flex sm:items-center sm:gap-4">
+            <img
+              src="./images/manage.svg"
+              alt="manage"
+              class="post-image-styles"
+            />
+
+            <div>
+              <div class="padding-top my-4 flex items-center gap-4 sm:my-2">
+                <p class="text-style">Manage</p>
+                <p
+                  class="rounded-full bg-[var(--green-400-color)] px-2 py-0.5 font-[var(--font-weight-700)] text-[var(--green-50-background-color)] uppercase"
+                >
+                  New!
+                </p>
+                <p
+                  class="rounded-full bg-[var(--green-900-color)] px-2 py-0.5 font-[var(--font-weight-700)] text-[var(--green-50-background-color)] uppercase"
+                >
+                  Featured
+                </p>
+              </div>
+              <a href="#" class="link-text">Fullstack Developer</a>
+              <div class="job-text">
+                <p>1d ago</p>
+                <span class="padding-bottom">.</span>
+                <p>Part Time</p>
+                <span class="padding-bottom">.</span>
+                <p>Remote</p>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <!-- filtering article -->
+          <article class="article-flex">
+            <button type="button" data-role=" Frontend" class="status">
+              Fullstack
+            </button>
+            <button type="button" data-level="Senior" class="status">
+              Midweight
+            </button>
+            <button type="button" data-language="Python" class="status">
+              Python
+            </button>
+            <button type="button" data-language="React" class="status">
+              React
+            </button>
+          </article>
+        </div>
+
+        <!-- Junior Frontend Developer -->
+        <div
+          class="new-post-container-box lg:flex lg:items-center lg:justify-between"
+        >
+          <div class="relative sm:flex sm:items-center sm:gap-4">
+            <img
+              src="./images/account.svg"
+              alt="account"
+              class="post-image-styles"
+            />
+            <div>
+              <div class="padding-top my-4 flex items-center gap-4 sm:my-2">
+                <p class="text-style">Account</p>
+                <p
+                  class="rounded-full bg-[var(--green-400-color)] px-2 py-0.5 font-[var(--font-weight-700)] text-[var(--green-50-background-color)] uppercase"
+                >
+                  New!
+                </p>
+              </div>
+              <a href="#" class="link-text">Junior Frontend Developer</a>
+              <div class="job-text">
+                <p class="padding-bottom">2d ago</p>
+                <span>.</span>
+                <p>Part Time</p>
+                <span class="padding-bottom">.</span>
+                <p>USA only</p>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+          <!-- filtering article -->
+          <article class="article-flex">
+            <button type="button" data-role=" Frontend" class="status">
+              Frontend
+            </button>
+            <button type="button" data-level="Junior" class="status">
+              Junior
+            </button>
+            <button type="button" data-language="React" class="status">
+              React
+            </button>
+            <button type="button" data-language="Sass" class="status">
+              Sass
+            </button>
+            <button type="button" data-language="JavaScript" class="status">
+              JavaScript
+            </button>
+          </article>
+        </div>
+
+        <!-- another frontend developer -->
+        <div
+          class="old-post-container-box lg:flex lg:items-center lg:justify-between"
+        >
+          <div class="relative sm:flex sm:items-center sm:gap-4">
+            <img
+              src="./images/myhome.svg"
+              alt="myhome"
+              class="post-image-styles"
+            />
+            <div>
+              <div class="padding-top sm:my-2">
+                <p class="text-style">MyHome</p>
+              </div>
+              <a href="#" class="link-text">Junior Frontend Developer</a>
+              <div class="job-text">
+                <p>5d ago</p>
+                <span class="padding-bottom">.</span>
+                <p>Contract</p>
+                <span class="padding-bottom">.</span>
+                <p>USA only</p>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <!-- filtering article -->
+          <article class="article-flex">
+            <button type="button" data-role=" Frontend" class="status">
+              Frontend
+            </button>
+            <button type="button" data-level="Junior" class="status">
+              Junior
+            </button>
+            <button type="button" data-language="CSS" class="status">
+              CSS
+            </button>
+            <button type="button" data-language="JavaScript" class="status">
+              JavaScript
+            </button>
+          </article>
+        </div>
+
+        <!-- Loop Studios -->
+        <div
+          class="old-post-container-box lg:flex lg:items-center lg:justify-between"
+        >
+          <div class="relative sm:flex sm:items-center sm:gap-4">
+            <img
+              src="./images/loop-studios.svg"
+              alt="myhome"
+              class="post-image-styles"
+            />
+            <div>
+              <div class="padding-top sm:my-2">
+                <p class="text-style">Loop Studios</p>
+              </div>
+              <a href="#" class="link-text">Software Engineer</a>
+              <div class="job-text">
+                <p>1w ago</p>
+                <span class="padding-bottom">.</span>
+                <p>Full Time</p>
+                <span class="padding-bottom">.</span>
+                <p>Worldwide</p>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+          <!-- filtering article -->
+          <article class="article-flex">
+            <button type="button" data-role=" Frontend" class="status">
+              Fullstack
+            </button>
+            <button type="button" data-level="Midweight" class="status">
+              Midweight
+            </button>
+            <button type="button" data-language="JavaScript" class="status">
+              JavaScript
+            </button>
+            <button type="button" data-language="Sass" class="status">
+              Sass
+            </button>
+            <button type="button" data-language="Ruby" class="status">
+              Ruby
+            </button>
+          </article>
+        </div>
+
+        <!-- Junior Backend Developer -->
+        <div
+          class="old-post-container-box lg:flex lg:items-center lg:justify-between"
+        >
+          <div class="relative sm:flex sm:items-center sm:gap-4">
+            <img
+              src="./images/faceit.svg"
+              alt="faceit"
+              class="post-image-styles"
+            />
+            <div>
+              <div class="padding-top sm:my-2">
+                <p class="text-style">FaceIt</p>
+              </div>
+              <a href="#" class="link-text">Junior Backend Developer</a>
+              <div class="job-text">
+                <p>2w ago</p>
+                <span class="padding-bottom">.</span>
+                <p>Full Time</p>
+                <span class="padding-bottom">.</span>
+                <p>UK only</p>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+          <!-- filtering article -->
+          <article class="article-flex">
+            <button type="button" data-role=" Backend" class="status">
+              Backend
+            </button>
+            <button type="button" data-level="Junior" class="status">
+              Junior
+            </button>
+            <button type="button" data-language="Ruby" class="status">
+              Ruby
+            </button>
+            <button type="button" data-language="RoR" class="status">
+              RoR
+            </button>
+          </article>
+        </div>
+
+        <!-- Junior Developer -->
+        <div
+          class="old-post-container-box lg:flex lg:items-center lg:justify-between"
+        >
+          <div class="relative sm:flex sm:items-center sm:gap-4">
+            <img
+              src="./images/shortly.svg"
+              alt="shortly"
+              class="post-image-styles"
+            />
+            <div>
+              <div class="padding-top sm:my-2">
+                <p class="text-style">Shortly</p>
+              </div>
+              <a href="#" class="link-text">Junior Developer</a>
+              <div class="job-text">
+                <p>2w ago</p>
+                <span class="padding-bottom">.</span>
+                <p>Full Time</p>
+                <span class="padding-bottom">.</span>
+                <p>Worldwide</p>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+          <!-- filtering article -->
+          <article class="article-flex">
+            <button type="button" data-role=" Frontend" class="status">
+              Frontend
+            </button>
+            <button type="button" data-level="Junior" class="status">
+              Junior
+            </button>
+            <button type="button" data-language="HTML" class="status">
+              HTML
+            </button>
+            <button type="button" data-language="Sass" class="status">
+              Sass
+            </button>
+
+            <button type="button" data-language="JavaScript" class="status">
+              JavaScript
+            </button>
+          </article>
+        </div>
+
+        <!-- Junior Fontend Developer -->
+        <div
+          class="old-post-container-box lg:flex lg:items-center lg:justify-between"
+        >
+          <div class="relative sm:flex sm:items-center sm:gap-4">
+            <img
+              src="./images/insure.svg"
+              alt="insure"
+              class="post-image-styles"
+            />
+            <div>
+              <div class="padding-top sm:my-2">
+                <p class="text-style">Insure</p>
+              </div>
+              <a href="#" class="link-text">Junior Frontend Developer</a>
+              <div class="job-text">
+                <p>2w ago</p>
+                <span class="padding-bottom">.</span>
+                <p>Full Time</p>
+                <span class="padding-bottom">.</span>
+                <p>USA only</p>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+          <!-- filtering article -->
+          <article class="article-flex">
+            <button type="button" data-role=" Frontend" class="status">
+              Frontend
+            </button>
+            <button type="button" data-level="Junior" class="status">
+              Junior
+            </button>
+            <button type="button" data-language="Vue" class="status">
+              Vue
+            </button>
+            <button type="button" data-language="JavaScript" class="status">
+              JavaScript
+            </button>
+            <button type="button" data-language="Sass" class="status">
+              Sass
+            </button>
+          </article>
+        </div>
+
+        <!-- Full Stack Engineer -->
+        <div
+          class="old-post-container-box lg:flex lg:items-center lg:justify-between"
+        >
+          <div class="relative sm:flex sm:items-center sm:gap-4">
+            <img
+              src="./images/eyecam-co.svg"
+              alt="eyecam-co"
+              class="post-image-styles"
+            />
+            <div>
+              <div class="padding-top sm:my-2">
+                <p class="text-style">Eyecam Co.</p>
+              </div>
+              <a href="#" class="link-text">Full Stack Engineer</a>
+              <div class="job-text">
+                <p>3w ago</p>
+                <span class="padding-bottom">.</span>
+                <p>Full Time</p>
+                <span class="padding-bottom">.</span>
+                <p>Worldwide</p>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+          <!-- filtering article -->
+          <article class="article-flex">
+            <button type="button" data-role=" Fullstack" class="status">
+              Fullstack
+            </button>
+            <button type="button" data-level="Midweight" class="status">
+              Midweight
+            </button>
+            <button type="button" data-language="JavaScript" class="status">
+              JavaScript
+            </button>
+            <button type="button" data-language="Django" class="status">
+              Django
+            </button>
+            <button type="button" data-language="Python" class="status">
+              Python
+            </button>
+          </article>
+        </div>
+
+        <!-- Front-end Dev -->
+        <div
+          class="old-post-container-box lg:flex lg:items-center lg:justify-between"
+        >
+          <div class="relative sm:flex sm:items-center sm:gap-4">
+            <img
+              src="./images/the-air-filter-company.svg"
+              alt="the-air-filter-company"
+              class="post-image-styles"
+            />
+            <div>
+              <div class="padding-top sm:my-2">
+                <p class="text-style">The Air Filter Company</p>
+              </div>
+              <a href="#" class="link-text">Front-end Dev</a>
+              <div class="job-text">
+                <p>1mo ago</p>
+                <span class="padding-bottom">.</span>
+                <p>Part Time</p>
+                <span class="padding-bottom">.</span>
+                <p>Worldwide</p>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+          <!-- filtering article -->
+          <article class="article-flex">
+            <button type="button" data-role=" Frontend" class="status">
+              Frontend
+            </button>
+            <button type="button" data-level="Junior" class="status">
+              Junior"
+            </button>
+            <button type="button" data-language="React" class="status">
+              React
+            </button>
+            <button type="button" data-language="Sass" class="status">
+              Sass
+            </button>
+            <button type="button" data-language="JavaScript" class="status">
+              JavaScript
+            </button>
+          </article>
+        </div>
+      </section>
+    </main>
+    <!-- end of main  -->
+
+    <!-- footer -->
+    <footer>
+      <div class="attribution text-center text-[11px]">
+        Challenge by
+        <a
+          class="text-[hsl(228,45%,44%)]"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a class="text-[hsl(228,45%,44%)]" href="#">Sadick Sulley</a>.
+      </div>
+    </footer>
+    <!-- end of footer -->
+
+    <!-- javascript link -->
+    <script src="./src/main.js" type="module"></script>
+  </body>
+</html>

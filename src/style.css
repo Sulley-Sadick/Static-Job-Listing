@@ -1,0 +1,85 @@
+/* imported tailwindcss */
+@import "tailwindcss";
+
+/* base styles */
+@layer base {
+  :root {
+    /* primary colors */
+    --green-400-color: hsl(180, 29%, 50%);
+
+    /* neutral colors */
+    --green-50-background-color: hsl(180, 52%, 96%);
+    --gray-400-color: hsl(180, 8%, 52%);
+    --green-900-color: hsl(180, 14%, 20%);
+    --white-color: hsl(0, 100%, 100%);
+
+    /* fonts */
+    --font-size: 0.93rem;
+    --font-family: "League Spartan", sans-serif;
+    --font-weight-500: 500;
+    --font-weight-700: 700;
+  }
+}
+
+/* utilities style */
+@layer utilities {
+  /* new post container-box styles */
+  .new-post-container-box {
+    @apply mx-auto mt-[4rem] max-w-[23rem] rounded-[10px] border-l-[.5rem] border-[var(--green-400-color)] bg-[var(--white-color)] p-6 shadow-2xl sm:max-w-[40rem] lg:max-w-[70rem];
+  }
+
+  /* old post container-box styles */
+  .old-post-container-box {
+    @apply mx-auto mt-[4rem] max-w-[23rem] rounded-[10px] bg-[var(--white-color)] p-6 shadow-2xl sm:max-w-[40rem] lg:max-w-[70rem];
+  }
+
+  /* styles for old post images   */
+  .post-image-styles {
+    @apply absolute -top-[4.2rem] -left-1 sm:static;
+  }
+
+  /* padding top all div element */
+  .padding-top {
+    @apply pt-[2rem] sm:pt-0;
+  }
+
+  /* padding left for shortly, insure, faceIl, eyecam.co */
+  .padding-left {
+    @apply pl-2;
+  }
+
+  /* text styles */
+  .text-style {
+    @apply font-[var(--font-weight-700)] text-[var(--green-400-color)];
+  }
+
+  /* link text styles */
+  .link-text {
+    @apply my-2 block font-[var(--font-weight-700)] text-[var(--green-900-color)] hover:text-[var(--green-400-color)] sm:my-0;
+  }
+
+  /* duration text */
+  .job-text {
+    @apply flex items-center gap-4 font-[var(--font-weight-500)] text-[var(--gray-400-color)];
+  }
+
+  /* padding bottom for all period signs */
+  .padding-bottom {
+    @apply pb-2;
+  }
+
+  /* hr styles */
+  hr {
+    @apply my-4 text-[var(--gray-400-color)];
+  }
+
+  /* status styles*/
+  .status {
+    @apply cursor-pointer bg-[var(--green-50-background-color)] p-3 font-[var(--font-weight-700)] text-[var(--green-400-color)] hover:bg-[var(--green-400-color)] hover:text-[var(--green-50-background-color)];
+  }
+
+  /* article flex conatainer */
+  .article-flex {
+    @apply flex flex-wrap items-center gap-4;
+  }
+}
