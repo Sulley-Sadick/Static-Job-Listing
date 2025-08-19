@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- favicon icon -->
     <link
       rel="icon"
       type="image/png"
@@ -32,42 +33,41 @@
   >
     <!-- header container -->
     <header
-      class="h-[10rem] bg-[var(--green-400-color)] bg-[url(./images/bg-header-mobile.svg)] bg-cover bg-center bg-no-repeat p-4 lg:bg-[url(./images/bg-header-desktop.svg)] relative"
-    ></header>
+      class="h-[10rem] bg-[var(--green-400-color)] bg-[url(./images/bg-header-mobile.svg)] bg-cover bg-center bg-no-repeat p-4 lg:bg-[url(./images/bg-header-desktop.svg)] relative">
     </header>
     <!-- main container -->
     <main class="main-container p-6">
       
-      <!-- filtering container -->
+      <!-- filter bar -->
       <div
-        class="filtering-container flex max-h-[8rem] max-w-[23rem] items-center justify-between rounded-[10px] bg-[var(--white-color)] py-5 shadow-2xl sm:max-w-[39rem] mx-auto lg:max-h-[5rem] lg:max-w-[70rem] -mt-[4rem] z-10 relative sm:-mt-[3.5rem]"
+        class="filter-bar  h-auto flex items-center justify-between  max-w-[23rem]  rounded-[10px] bg-[var(--white-color)] px-4 shadow-2xl sm:max-w-[39rem] mx-auto  lg:max-w-[70rem] -mt-[4rem] z-10 relative sm:-mt-[3.5rem] py-4"
       >
-        <!-- categories -->
-        <div class="categories"></div>
-        <a
-          href="#"
-          class="block pr-6 font-[var(--font-weight-500)] text-[var(--green--900-color)] underline-offset-1 hover:text-[var(--green-400-color)] hover:underline"
-          >Clear</a
-        >
+        <!-- filter-tags -->
+        <div class="filter-tags flex flex-wrap items-center gap-4 "></div>
+
+        <button type="button" class="block pr-6 font-[var(--font-weight-500)] text-[var(--green--900-color)] underline-offset-1 hover:text-[var(--green-400-color)] cursor-pointer hover:underline clear-btn">Clear
+        </button>
       </div>
-      <!-- end of filtering container -->
+      <!-- end of filter container -->
+
       <!-- main section -->
-      <section>
+      <section class="job-listings">
         <div
-          class="new-post-container-box lg:flex lg:items-center lg:justify-between"
+          class="job-card new-job-post-container lg:flex lg:items-center lg:justify-between" data-role="Frontend" data-level="Senior" data-languages="HTML CSS JavaScript" data-tools=""
         >
           <!-- Senior Frontend -->
-          <div class="relative sm:flex sm:items-center sm:gap-4">
+          <div class="relative sm:flex sm:items-center sm:gap-4 ">
             <img
               src="./images/photosnap.svg"
               alt="photosnap"
-              class="post-image-styles"
+              class="new-job-post-image-styles"
             />
+           <!-- content -->
             <div>
-              <div class="padding-top my-4 flex items-center gap-4 sm:my-2">
+              <div class="new-padding-top my-4 flex items-center gap-4 sm:my-2 flex-wrap">
                 <p class="text-style">Photosnap</p>
                 <p
-                  class="rounded-full bg-[var(--green-400-color)] px-2 py-0.5 font-[var(--font-weight-700)] text-[var(--green-50-background-color)] uppercase"
+                class="rounded-full bg-[var(--green-400-color)] px-2 py-0.5 font-[var(--font-weight-700)] text-[var(--green-50-background-color)] uppercase"
                 >
                   New!
                 </p>
@@ -77,7 +77,7 @@
                   Featured
                 </p>
               </div>
-              <a href="#" class="link-text">Senior Frontend Developer</a>
+              <button type="button" class="link-text">Senior Frontend Developer</button>
               <div class="job-text">
                 <p>1d ago</p>
                 <span class="padding-bottom">.</span>
@@ -88,21 +88,21 @@
             </div>
           </div>
           <hr />
-          <!-- frontend article -->
-          <article class="article-flex">
-            <button type="button" data-role=" Frontend" class="status">
+          <!-- filter article -->
+          <article class="flex-article">
+            <button type="button" data-filter="Frontend"  class="status">
               Frontend
             </button>
-            <button type="button" data-level="Senior" class="status">
+            <button type="button" data-filter="Senior"  class="status">
               Senior
             </button>
-            <button type="button" data-language="HTML" class="status">
+            <button type="button"  data-filter="HTML"  class="status">
               HTML
             </button>
-            <button type="button" data-language="CSS" class="status">
+            <button type="button" data-filter="CSS" class="status">
               CSS
             </button>
-            <button type="button" data-language="JavaScript" class="status">
+            <button type="button" data-filter="JavaScript" class="status">
               JavaScript
             </button>
           </article>
@@ -110,17 +110,19 @@
 
         <!-- fullstack  developer-->
         <div
-          class="new-post-container-box lg:flex lg:items-center lg:justify-between"
+          class="new-job-post-container lg:flex lg:items-center lg:justify-between job-card" data-role="Fullstack" data-level="Midweight" data-languages="Python" data-tools="React"
         >
           <div class="relative sm:flex sm:items-center sm:gap-4">
             <img
               src="./images/manage.svg"
               alt="manage"
-              class="post-image-styles"
+              class="new-job-post-image-styles"
             />
+            
 
+           <!-- content -->
             <div>
-              <div class="padding-top my-4 flex items-center gap-4 sm:my-2">
+              <div class="new-padding-top my-4 flex items-center gap-4 sm:my-2 flex-wrap">
                 <p class="text-style">Manage</p>
                 <p
                   class="rounded-full bg-[var(--green-400-color)] px-2 py-0.5 font-[var(--font-weight-700)] text-[var(--green-50-background-color)] uppercase"
@@ -133,7 +135,7 @@
                   Featured
                 </p>
               </div>
-              <a href="#" class="link-text">Fullstack Developer</a>
+              <button type="button" class="link-text">Fullstack Developer</button>
               <div class="job-text">
                 <p>1d ago</p>
                 <span class="padding-bottom">.</span>
@@ -144,18 +146,18 @@
             </div>
           </div>
           <hr />
-          <!-- filtering article -->
-          <article class="article-flex">
-            <button type="button" data-role=" Frontend" class="status">
+          <!-- filter article -->
+          <article class="flex-article">
+            <button type="button" data-filter="Fullstack" class="status">
               Fullstack
             </button>
-            <button type="button" data-level="Senior" class="status">
+            <button type="button" data-filter="Midweight" class="status">
               Midweight
             </button>
-            <button type="button" data-language="Python" class="status">
+            <button type="button" data-filter="Python" class="status">
               Python
             </button>
-            <button type="button" data-language="React" class="status">
+            <button type="button" data-filter="React" class="status">
               React
             </button>
           </article>
@@ -163,16 +165,19 @@
 
         <!-- Junior Frontend Developer -->
         <div
-          class="new-post-container-box lg:flex lg:items-center lg:justify-between"
+          class="new-job-post-container lg:flex lg:items-center lg:justify-between job-card" data-role="Frontend" data-level="Junior" data-languages="JavaScript" data-tools="Sass React"
         >
           <div class="relative sm:flex sm:items-center sm:gap-4">
             <img
               src="./images/account.svg"
               alt="account"
-              class="post-image-styles"
+              class="new-job-post-image-styles"
             />
+            
+
+          <!-- content -->
             <div>
-              <div class="padding-top my-4 flex items-center gap-4 sm:my-2">
+              <div class="new-padding-top my-4 flex items-center gap-4 sm:my-2 flex-wrap">
                 <p class="text-style">Account</p>
                 <p
                   class="rounded-full bg-[var(--green-400-color)] px-2 py-0.5 font-[var(--font-weight-700)] text-[var(--green-50-background-color)] uppercase"
@@ -180,7 +185,7 @@
                   New!
                 </p>
               </div>
-              <a href="#" class="link-text">Junior Frontend Developer</a>
+              <button type="button"  class="link-text">Junior Frontend Developer</button>
               <div class="job-text">
                 <p class="padding-bottom">2d ago</p>
                 <span>.</span>
@@ -192,21 +197,21 @@
           </div>
 
           <hr />
-          <!-- filtering article -->
-          <article class="article-flex">
-            <button type="button" data-role=" Frontend" class="status">
+          <!-- filter article -->
+          <article class="flex-article">
+            <button type="button" data-filter="Frontend" class="status">
               Frontend
             </button>
-            <button type="button" data-level="Junior" class="status">
+            <button type="button" data-filter="Junior" class="status">
               Junior
             </button>
-            <button type="button" data-language="React" class="status">
+            <button type="button" data-filter="React" class="status">
               React
             </button>
-            <button type="button" data-language="Sass" class="status">
+            <button type="button" data-filter="Sass" class="status">
               Sass
             </button>
-            <button type="button" data-language="JavaScript" class="status">
+            <button type="button" data-filter="JavaScript" class="status">
               JavaScript
             </button>
           </article>
@@ -214,19 +219,21 @@
 
         <!-- another frontend developer -->
         <div
-          class="old-post-container-box lg:flex lg:items-center lg:justify-between"
+          class="old-job-post-container lg:flex lg:items-center lg:justify-between job-card" data-role="Frontend" data-level="Junior" data-languages="JavaScript CSS" data-tools=""
         >
           <div class="relative sm:flex sm:items-center sm:gap-4">
             <img
               src="./images/myhome.svg"
               alt="myhome"
-              class="post-image-styles"
+              class="old-job-post-image-styles"
             />
+
+           <!-- content -->
             <div>
-              <div class="padding-top sm:my-2">
+              <div class="old-padding-top sm:my-2">
                 <p class="text-style">MyHome</p>
               </div>
-              <a href="#" class="link-text">Junior Frontend Developer</a>
+              <button type="button" class="link-text">Junior Frontend Developer</button>
               <div class="job-text">
                 <p>5d ago</p>
                 <span class="padding-bottom">.</span>
@@ -237,18 +244,18 @@
             </div>
           </div>
           <hr />
-          <!-- filtering article -->
-          <article class="article-flex">
-            <button type="button" data-role=" Frontend" class="status">
+          <!-- filter article -->
+          <article class="flex-article">
+            <button type="button" data-filter="Frontend" class="status">
               Frontend
             </button>
-            <button type="button" data-level="Junior" class="status">
+            <button type="button" data-filter="Junior" class="status">
               Junior
             </button>
-            <button type="button" data-language="CSS" class="status">
+            <button type="button" data-filter="CSS" class="status">
               CSS
             </button>
-            <button type="button" data-language="JavaScript" class="status">
+            <button type="button" data-filter="JavaScript" class="status">
               JavaScript
             </button>
           </article>
@@ -256,19 +263,21 @@
 
         <!-- Loop Studios -->
         <div
-          class="old-post-container-box lg:flex lg:items-center lg:justify-between"
+          class="old-job-post-container lg:flex lg:items-center lg:justify-between job-card" data-role="Fullstack" data-level="Midweight" data-languages="JavaScript" data-tools="Sass Ruby"
         >
           <div class="relative sm:flex sm:items-center sm:gap-4">
             <img
               src="./images/loop-studios.svg"
               alt="myhome"
-              class="post-image-styles"
+              class="old-job-post-image-styles"
             />
-            <div>
-              <div class="padding-top sm:my-2">
+
+            <!-- content -->
+            <div> 
+              <div class="old-padding-top sm:my-2">
                 <p class="text-style">Loop Studios</p>
               </div>
-              <a href="#" class="link-text">Software Engineer</a>
+              <button type="button" class="link-text">Software Engineer</button>
               <div class="job-text">
                 <p>1w ago</p>
                 <span class="padding-bottom">.</span>
@@ -276,25 +285,26 @@
                 <span class="padding-bottom">.</span>
                 <p>Worldwide</p>
               </div>
+        
             </div>
           </div>
 
           <hr />
-          <!-- filtering article -->
-          <article class="article-flex">
-            <button type="button" data-role=" Frontend" class="status">
+          <!-- filter article -->
+          <article class="flex-article">
+            <button type="button" data-filter="Fullstack" class="status">
               Fullstack
             </button>
-            <button type="button" data-level="Midweight" class="status">
+            <button type="button" data-filter="Midweight" class="status">
               Midweight
             </button>
-            <button type="button" data-language="JavaScript" class="status">
+            <button type="button" data-filter="JavaScript" class="status">
               JavaScript
             </button>
-            <button type="button" data-language="Sass" class="status">
+            <button type="button" data-filter="Sass" class="status">
               Sass
             </button>
-            <button type="button" data-language="Ruby" class="status">
+            <button type="button" data-filter="Ruby" class="status">
               Ruby
             </button>
           </article>
@@ -302,19 +312,21 @@
 
         <!-- Junior Backend Developer -->
         <div
-          class="old-post-container-box lg:flex lg:items-center lg:justify-between"
+          class="old-job-post-container lg:flex lg:items-center lg:justify-between job-card" data-role="Backend" data-level="Junior" data-languages="" data-tools="Ruby RoR"
         >
           <div class="relative sm:flex sm:items-center sm:gap-4">
             <img
               src="./images/faceit.svg"
               alt="faceit"
-              class="post-image-styles"
+              class="old-job-post-image-styles"
             />
+
+            <!-- content -->
             <div>
-              <div class="padding-top sm:my-2">
+              <div class="old-padding-top sm:my-2">
                 <p class="text-style">FaceIt</p>
               </div>
-              <a href="#" class="link-text">Junior Backend Developer</a>
+              <button type="button" class="link-text">Junior Backend Developer</a></button>
               <div class="job-text">
                 <p>2w ago</p>
                 <span class="padding-bottom">.</span>
@@ -326,38 +338,40 @@
           </div>
 
           <hr />
-          <!-- filtering article -->
-          <article class="article-flex">
-            <button type="button" data-role=" Backend" class="status">
+          <!-- filter article -->
+          <article class="flex-article">
+            <button type="button" data-filter="Backend" class="status">
               Backend
             </button>
-            <button type="button" data-level="Junior" class="status">
+            <button type="button" data-filter="Junior" class="status">
               Junior
             </button>
-            <button type="button" data-language="Ruby" class="status">
+            <button type="button" data-filter="Ruby" class="status">
               Ruby
             </button>
-            <button type="button" data-language="RoR" class="status">
+            <button type="button" data-filter="RoR" class="status">
               RoR
             </button>
           </article>
         </div>
-
+        
         <!-- Junior Developer -->
         <div
-          class="old-post-container-box lg:flex lg:items-center lg:justify-between"
+          class="old-job-post-container lg:flex lg:items-center lg:justify-between job-card"  data-role="Frontend" data-level="Junior" data-languages="HTML JavaScript" data-tools="Sass"
         >
           <div class="relative sm:flex sm:items-center sm:gap-4">
             <img
-              src="./images/shortly.svg"
-              alt="shortly"
-              class="post-image-styles"
+            src="./images/shortly.svg"
+            alt="shortly"
+            class="old-job-post-image-styles"
             />
+
+          <!-- content -->
             <div>
-              <div class="padding-top sm:my-2">
+              <div class="old-padding-top sm:my-2">
                 <p class="text-style">Shortly</p>
               </div>
-              <a href="#" class="link-text">Junior Developer</a>
+              <button type="button" class="link-text">Junior Developer</a></button>
               <div class="job-text">
                 <p>2w ago</p>
                 <span class="padding-bottom">.</span>
@@ -369,22 +383,22 @@
           </div>
 
           <hr />
-          <!-- filtering article -->
-          <article class="article-flex">
-            <button type="button" data-role=" Frontend" class="status">
+          <!-- filter article -->
+          <article class="flex-article">
+            <button type="button" data-filter="Frontend" class="status">
               Frontend
             </button>
-            <button type="button" data-level="Junior" class="status">
+            <button type="button" data-filter="Junior" class="status">
               Junior
             </button>
-            <button type="button" data-language="HTML" class="status">
+            <button type="button" data-filter="HTML" class="status">
               HTML
             </button>
-            <button type="button" data-language="Sass" class="status">
+            <button type="button" data-filter="Sass" class="status">
               Sass
             </button>
-
-            <button type="button" data-language="JavaScript" class="status">
+            
+            <button type="button" data-filter="JavaScript" class="status">
               JavaScript
             </button>
           </article>
@@ -392,19 +406,21 @@
 
         <!-- Junior Fontend Developer -->
         <div
-          class="old-post-container-box lg:flex lg:items-center lg:justify-between"
-        >
+          class="old-job-post-container lg:flex lg:items-center lg:justify-between job-card"  data-role="Frontend" data-level="Junior" data-languages="JavaScript" data-tools="Vue Sass"
+          >
           <div class="relative sm:flex sm:items-center sm:gap-4">
             <img
-              src="./images/insure.svg"
-              alt="insure"
-              class="post-image-styles"
+            src="./images/insure.svg"
+            alt="insure"
+            class="old-job-post-image-styles"
             />
+
+           <!-- content -->
             <div>
-              <div class="padding-top sm:my-2">
-                <p class="text-style">Insure</p>
+              <div class="old-padding-top sm:my-2">
+                <p class="text-style ">Insure</p>
               </div>
-              <a href="#" class="link-text">Junior Frontend Developer</a>
+              <button type="button" class="link-text">Junior Frontend Developer</a></button>
               <div class="job-text">
                 <p>2w ago</p>
                 <span class="padding-bottom">.</span>
@@ -414,23 +430,23 @@
               </div>
             </div>
           </div>
-
+          
           <hr />
-          <!-- filtering article -->
-          <article class="article-flex">
-            <button type="button" data-role=" Frontend" class="status">
+          <!-- filter article -->
+          <article class="flex-article">
+            <button type="button" data-filter="Frontend" class="status">
               Frontend
             </button>
-            <button type="button" data-level="Junior" class="status">
+            <button type="button" data-filter="Junior" class="status">
               Junior
             </button>
-            <button type="button" data-language="Vue" class="status">
+            <button type="button" data-filter="Vue" class="status">
               Vue
             </button>
-            <button type="button" data-language="JavaScript" class="status">
+            <button type="button" data-filter="JavaScript" class="status">
               JavaScript
             </button>
-            <button type="button" data-language="Sass" class="status">
+            <button type="button" data-filter="Sass" class="status">
               Sass
             </button>
           </article>
@@ -438,19 +454,20 @@
 
         <!-- Full Stack Engineer -->
         <div
-          class="old-post-container-box lg:flex lg:items-center lg:justify-between"
+          class="old-job-post-container lg:flex lg:items-center lg:justify-between job-card"  data-role="Fullstack" data-level="Midweight" data-languages="JavaScript Python" data-tools="Django"
         >
           <div class="relative sm:flex sm:items-center sm:gap-4">
             <img
-              src="./images/eyecam-co.svg"
-              alt="eyecam-co"
-              class="post-image-styles"
+            src="./images/eyecam-co.svg"
+            alt="eyecam-co"
+            class="old-job-post-image-styles"
             />
-            <div>
-              <div class="padding-top sm:my-2">
+            <!-- content -->
+            <div >
+              <div class="old-padding-top sm:my-2">
                 <p class="text-style">Eyecam Co.</p>
               </div>
-              <a href="#" class="link-text">Full Stack Engineer</a>
+              <button type="button" class="link-text">Full Stack Engineer</a></button>
               <div class="job-text">
                 <p>3w ago</p>
                 <span class="padding-bottom">.</span>
@@ -462,21 +479,21 @@
           </div>
 
           <hr />
-          <!-- filtering article -->
-          <article class="article-flex">
-            <button type="button" data-role=" Fullstack" class="status">
+          <!-- filter article -->
+          <article class="flex-article">
+            <button type="button" data-filter="Fullstack" class="status">
               Fullstack
             </button>
-            <button type="button" data-level="Midweight" class="status">
+            <button type="button" data-filter="Midweight" class="status">
               Midweight
             </button>
-            <button type="button" data-language="JavaScript" class="status">
+            <button type="button" data-filter="JavaScript" class="status">
               JavaScript
             </button>
-            <button type="button" data-language="Django" class="status">
+            <button type="button" data-filter="Django" class="status">
               Django
             </button>
-            <button type="button" data-language="Python" class="status">
+            <button type="button" data-filter="Python" class="status">
               Python
             </button>
           </article>
@@ -484,19 +501,20 @@
 
         <!-- Front-end Dev -->
         <div
-          class="old-post-container-box lg:flex lg:items-center lg:justify-between"
+          class="old-job-post-container lg:flex lg:items-center lg:justify-between job-card"  data-role="Frontend" data-level="Junior" data-languages="JavaScript" data-tools="React Sass"
         >
           <div class="relative sm:flex sm:items-center sm:gap-4">
             <img
               src="./images/the-air-filter-company.svg"
               alt="the-air-filter-company"
-              class="post-image-styles"
+              class="old-job-post-image-styles"
             />
-            <div>
-              <div class="padding-top sm:my-2">
+            <!-- content -->
+            <div >
+              <div class="old-padding-top sm:my-2">
                 <p class="text-style">The Air Filter Company</p>
               </div>
-              <a href="#" class="link-text">Front-end Dev</a>
+              <button type="button" class="link-text">Front-end Dev</button>
               <div class="job-text">
                 <p>1mo ago</p>
                 <span class="padding-bottom">.</span>
@@ -508,21 +526,21 @@
           </div>
 
           <hr />
-          <!-- filtering article -->
-          <article class="article-flex">
-            <button type="button" data-role=" Frontend" class="status">
+          <!-- filter article -->
+          <article class="flex-article">
+            <button type="button" data-filter="Frontend" class="status">
               Frontend
             </button>
-            <button type="button" data-level="Junior" class="status">
-              Junior"
+            <button type="button" data-filter="Junior" class="status">
+              Junior
             </button>
-            <button type="button" data-language="React" class="status">
+            <button type="button" data-filter="React" class="status">
               React
             </button>
-            <button type="button" data-language="Sass" class="status">
+            <button type="button" data-filter="Sass" class="status">
               Sass
             </button>
-            <button type="button" data-language="JavaScript" class="status">
+            <button type="button" data-filter="JavaScript" class="status">
               JavaScript
             </button>
           </article>
@@ -533,11 +551,11 @@
 
     <!-- footer -->
     <footer>
-      <div class="attribution text-center text-[11px]">
+      <div class="attribution text-center text-[12px]">
         Challenge by
         <a
           class="text-[hsl(228,45%,44%)]"
-          href="https://www.frontendmentor.io?ref=challenge"
+          href="https://github.com/Sulley-Sadick/Static-Job-Listing"
           target="_blank"
           >Frontend Mentor</a
         >. Coded by

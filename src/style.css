@@ -18,29 +18,40 @@
     --font-family: "League Spartan", sans-serif;
     --font-weight-500: 500;
     --font-weight-700: 700;
+    --font-weight-900: 900;
   }
 }
 
 /* utilities style */
 @layer utilities {
-  /* new post container-box styles */
-  .new-post-container-box {
-    @apply mx-auto mt-[4rem] max-w-[23rem] rounded-[10px] border-l-[.5rem] border-[var(--green-400-color)] bg-[var(--white-color)] p-6 shadow-2xl sm:max-w-[40rem] lg:max-w-[70rem];
+  /* new job post container- styles */
+  .new-job-post-container {
+    @apply mx-auto mt-[4rem] max-w-[23rem] rounded-[10px] border-l-[.5rem] border-[var(--green-400-color)] bg-[var(--white-color)] p-6 shadow-2xl sm:mt-[2rem] sm:max-w-[40rem] lg:max-w-[70rem];
   }
 
-  /* old post container-box styles */
-  .old-post-container-box {
-    @apply mx-auto mt-[4rem] max-w-[23rem] rounded-[10px] bg-[var(--white-color)] p-6 shadow-2xl sm:max-w-[40rem] lg:max-w-[70rem];
+  /* old job post container styles */
+  .old-job-post-container {
+    @apply mx-auto mt-[4rem] max-w-[23rem] rounded-[10px] bg-[var(--white-color)] p-6 shadow-2xl sm:mt-[2rem] sm:max-w-[40rem] lg:max-w-[70rem];
   }
 
-  /* styles for old post images   */
-  .post-image-styles {
-    @apply absolute -top-[4.2rem] -left-1 sm:static;
+  /* styles for new job post images   */
+  .new-job-post-image-styles {
+    @apply absolute -top-[4.4rem] -left-1 max-w-[4rem] sm:static sm:max-w-max;
   }
 
-  /* padding top all div element */
-  .padding-top {
-    @apply pt-[2rem] sm:pt-0;
+  /* styles for old job post images   */
+  .old-job-post-image-styles {
+    @apply absolute -top-[3.5rem] -left-1 max-w-[4rem] sm:static sm:max-w-max;
+  }
+
+  /* new posting padding top  */
+  .new-padding-top {
+    @apply pt-[.5rem] sm:pt-0;
+  }
+
+  /* new posting padding top  */
+  .old-padding-top {
+    @apply pt-[1rem] sm:pt-0;
   }
 
   /* padding left for shortly, insure, faceIl, eyecam.co */
@@ -50,17 +61,17 @@
 
   /* text styles */
   .text-style {
-    @apply font-[var(--font-weight-700)] text-[var(--green-400-color)];
+    @apply font-[var(--font-weight-900)] text-[var(--green-400-color)];
   }
 
   /* link text styles */
   .link-text {
-    @apply my-2 block font-[var(--font-weight-700)] text-[var(--green-900-color)] hover:text-[var(--green-400-color)] sm:my-0;
+    @apply my-2 block cursor-pointer font-[var(--font-weight-700)] text-[var(--green-900-color)] hover:text-[var(--green-400-color)] sm:my-0;
   }
 
   /* duration text */
   .job-text {
-    @apply flex items-center gap-4 font-[var(--font-weight-500)] text-[var(--gray-400-color)];
+    @apply flex flex-wrap items-center gap-4 font-[var(--font-weight-500)] text-[var(--gray-400-color)];
   }
 
   /* padding bottom for all period signs */
@@ -79,7 +90,32 @@
   }
 
   /* article flex conatainer */
-  .article-flex {
+  .flex-article {
     @apply flex flex-wrap items-center gap-4;
+  }
+
+  /* to be used by javascript dynamically */
+  .filter-bar.active {
+    @apply flex;
+  }
+
+  /* it used to hide element dynamically in javascript */
+  .hidden-element {
+    @apply hidden;
+  }
+
+  /* tags to be used by javascript */
+  .tags {
+    @apply flex items-center gap-4 rounded-[5px] bg-[var(--green-50-background-color)] font-[var(--font-weight-700)] text-[var(--green-400-color)];
+  }
+
+  /* filter-value to be used by javascript */
+  .filter-value {
+    @apply pl-2;
+  }
+
+  /* close-button to be used by javascript  */
+  .close-button {
+    @apply cursor-pointer rounded-tr-[5px] rounded-br-[5px] bg-[var(--green-400-color)] p-3 text-[var(--white-color)] hover:bg-[var(--green-900-color)];
   }
 }
